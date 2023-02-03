@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es2016", // versão do JS
+    "strict": true // força os arquivos ts a não aceitarem any
+  }
+}
+
+// "module": "commonjs",
+// "esModuleInterop": true,
+// "forceConsistentCasingInFileNames": true,
+// "skipLibCheck": true
