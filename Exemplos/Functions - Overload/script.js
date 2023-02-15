@@ -9,7 +9,7 @@ function normalizar(valor) {
 }
 console.log(normalizar(" Produto").toUpperCase());
 console.log(normalizar([" Banana", "UVA    "]));
-function $(seletor) {
+function seletor(seletor) {
     return document.querySelector(seletor);
 }
-$("a");
+seletor("a");

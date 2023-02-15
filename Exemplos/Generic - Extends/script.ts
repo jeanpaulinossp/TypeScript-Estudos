@@ -36,11 +36,11 @@ interface Notebook {
   preco: number;
 }
 
-async function handleData() {
+async function handleDataExExtends() {
   const notebook = await getData<Notebook>(
     "https://api.origamid.dev/json/notebook.json"
   );
   console.log(notebook);
 }
 
-handleData();
+handleDataExExtends();

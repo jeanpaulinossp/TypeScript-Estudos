@@ -11,19 +11,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 const video = document.querySelector("#video");
 video.volume;
-function fetchProduto() {
+function fetchProdutoExTypeAssertion() {
     return __awaiter(this, void 0, void 0, function* () {
         const response = yield fetch("https://api.origamid.dev/json/notebook.json");
         return response.json();
     });
 }
-function handleProduto() {
+function handleProdutoExTypeAssertion() {
     return __awaiter(this, void 0, void 0, function* () {
-        const produto = yield fetchProduto();
+        const produto = yield fetchProdutoExTypeAssertion();
         console.log(produto.nome);
     });
 }
-handleProduto();
+handleProdutoExTypeAssertion();
 // Exemplo 02 - Non-Null Operator
 const video2 = document.querySelector("video");
 video2 === null || video2 === void 0 ? void 0 : video2.volume;

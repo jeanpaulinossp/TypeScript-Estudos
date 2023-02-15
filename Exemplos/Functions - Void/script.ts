@@ -20,10 +20,10 @@ const btn = document.querySelector("button");
 
 btn?.click();
 
-function isString(value: any) {
+function isStringExVoid(value: any) {
   if (typeof value === "string") {
     return true;
   }
 }
 
-isString("Teste");
+isStringExVoid("Teste");

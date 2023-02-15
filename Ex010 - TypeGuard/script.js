@@ -13,14 +13,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-function fetchCursos() {
+function fetchCursosEx010() {
     return __awaiter(this, void 0, void 0, function* () {
         const response = yield fetch("https://api.origamid.dev/json/cursos.json");
         const json = yield response.json();
-        handleCursos(json);
+        handleCursosEx010(json);
     });
 }
-fetchCursos();
+fetchCursosEx010();
 function isCurso(value) {
     if (value &&
         typeof value === "object" &&
@@ -33,7 +33,7 @@ function isCurso(value) {
         return false;
     }
 }
-function handleCursos(data) {
+function handleCursosEx010(data) {
     if (Array.isArray(data)) {
         data.filter(isCurso).forEach((item) => {
             document.body.innerHTML += `

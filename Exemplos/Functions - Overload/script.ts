@@ -12,11 +12,11 @@ function normalizar(valor: string | string[]): string | string[] {
 console.log(normalizar(" Produto").toUpperCase());
 console.log(normalizar([" Banana", "UVA    "]));
 
-function $(seletor: "a"): HTMLAnchorElement | null;
-function $(seletor: "video"): HTMLVideoElement | null;
-function $(seletor: string): Element | null;
-function $(seletor: string): Element | null {
+function seletor(seletor: "a"): HTMLAnchorElement | null;
+function seletor(seletor: "video"): HTMLVideoElement | null;
+function seletor(seletor: string): Element | null;
+function seletor(seletor: string): Element | null {
   return document.querySelector(seletor);
 }
 
-$("a");
+seletor("a");

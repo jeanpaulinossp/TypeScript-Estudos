@@ -1,4 +1,4 @@
-function typeGuard(value: any) {
+function typeGuardExTypeGuard(value: any) {
   if (typeof value === "string") {
     return value.toLowerCase();
   }
@@ -10,9 +10,9 @@ function typeGuard(value: any) {
   }
 }
 
-typeGuard(200);
-typeGuard("333");
-typeGuard(document.body);
+typeGuardExTypeGuard(200);
+typeGuardExTypeGuard("333");
+typeGuardExTypeGuard(document.body);
 
 const obj = {
   nome: "Origamid",
@@ -22,10 +22,10 @@ if ("nome" in obj) {
   console.log("Existe");
 }
 
-async function fetchProduto() {
+async function fetchProdutoExTypeGuard() {
   const response = await fetch("https://api.origamid.dev/json/notebook.json");
   const json = await response.json();
-  handleProduto(json);
+  handleProdutoExTypeGuard(json);
 }
 
 interface Produto {
@@ -33,7 +33,7 @@ interface Produto {
   preco: number;
 }
 
-function handleProduto(data: Produto) {
+function handleProdutoExTypeGuard(data: Produto) {
   console.log(data);
   if ("preco" in data) {
     document.body.innerHTML += `
@@ -46,4 +46,4 @@ function handleProduto(data: Produto) {
   }
 }
 
-fetchProduto();
+fetchProdutoExTypeGuard();

@@ -8,14 +8,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-function fetchCursos() {
+function fetchCursosEx005() {
     return __awaiter(this, void 0, void 0, function* () {
         const response = yield fetch("https://api.origamid.dev/json/cursos.json");
         const data = yield response.json();
         mostrarCursos(data);
     });
 }
-fetchCursos();
+fetchCursosEx005();
 function mostrarCursos(cursos) {
     cursos.forEach((curso) => {
         let color;

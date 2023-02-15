@@ -9,17 +9,17 @@ interface Produto {
   preco: number;
 }
 
-async function fetchProduto() {
+async function fetchProdutoExTypeAssertion() {
   const response = await fetch("https://api.origamid.dev/json/notebook.json");
   return response.json() as Promise<Produto>;
 }
 
-async function handleProduto() {
-  const produto = await fetchProduto();
+async function handleProdutoExTypeAssertion() {
+  const produto = await fetchProdutoExTypeAssertion();
   console.log(produto.nome);
 }
 
-handleProduto();
+handleProdutoExTypeAssertion();
 
 // Exemplo 02 - Non-Null Operator
 

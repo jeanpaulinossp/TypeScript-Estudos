@@ -11,9 +11,9 @@ function pintarTela(cor) {
 pintarTela("black");
 const btn = document.querySelector("button");
 btn === null || btn === void 0 ? void 0 : btn.click();
-function isString(value) {
+function isStringExVoid(value) {
     if (typeof value === "string") {
         return true;
     }
 }
-isString("Teste");
+isStringExVoid("Teste");

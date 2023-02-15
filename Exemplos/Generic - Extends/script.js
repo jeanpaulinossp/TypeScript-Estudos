@@ -37,10 +37,10 @@ function getData(url) {
         return yield response.json();
     });
 }
-function handleData() {
+function handleDataExExtends() {
     return __awaiter(this, void 0, void 0, function* () {
         const notebook = yield getData("https://api.origamid.dev/json/notebook.json");
         console.log(notebook);
     });
 }
-handleData();
+handleDataExExtends();

@@ -4,13 +4,13 @@
 // 4 - Use Type Guards para garantir a Type Safety do código
 // 5 - Preencha os dados da API na tela.
 
-async function fetchCursos() {
+async function fetchCursosEx010() {
   const response = await fetch("https://api.origamid.dev/json/cursos.json");
   const json = await response.json();
-  handleCursos(json);
+  handleCursosEx010(json);
 }
 
-fetchCursos();
+fetchCursosEx010();
 
 interface Curso {
   nome: string;
@@ -36,7 +36,7 @@ function isCurso(value: unknown): value is Curso {
   }
 }
 
-function handleCursos(data: unknown) {
+function handleCursosEx010(data: unknown) {
   if (Array.isArray(data)) {
     data.filter(isCurso).forEach((item) => {
       document.body.innerHTML += `

@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-function typeGuard(value) {
+function typeGuardExTypeGuard(value) {
     if (typeof value === "string") {
         return value.toLowerCase();
     }
@@ -19,23 +19,23 @@ function typeGuard(value) {
         return value.innerText;
     }
 }
-typeGuard(200);
-typeGuard("333");
-typeGuard(document.body);
+typeGuardExTypeGuard(200);
+typeGuardExTypeGuard("333");
+typeGuardExTypeGuard(document.body);
 const obj = {
     nome: "Origamid",
 };
 if ("nome" in obj) {
     console.log("Existe");
 }
-function fetchProduto() {
+function fetchProdutoExTypeGuard() {
     return __awaiter(this, void 0, void 0, function* () {
         const response = yield fetch("https://api.origamid.dev/json/notebook.json");
         const json = yield response.json();
-        handleProduto(json);
+        handleProdutoExTypeGuard(json);
     });
 }
-function handleProduto(data) {
+function handleProdutoExTypeGuard(data) {
     console.log(data);
     if ("preco" in data) {
         document.body.innerHTML += `
@@ -48,4 +48,4 @@ function handleProduto(data) {
   <p>Entre em contato com o suporte</p>`;
     }
 }
-fetchProduto();
+fetchProdutoExTypeGuard();
