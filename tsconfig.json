@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2016", // versão do JS
+    "target": "es2017", // versão do JS
     "strict": true // força os arquivos ts a não aceitarem any
   }
 }
