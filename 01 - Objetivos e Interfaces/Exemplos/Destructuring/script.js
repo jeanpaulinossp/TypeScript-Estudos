@@ -5,10 +5,10 @@ function handleData1({ nome, preco }) {
     nome.includes("books");
     preco.toFixed();
 }
-handleData1({
-    nome: "Notebook",
-    preco: 500,
-});
+// handleData1({
+//   nome: "Notebook",
+//   preco: 500,
+// });
 // Exemplo 02
 function handleClick5({ currentTarget, pageX, }) {
     if (currentTarget instanceof HTMLElement) {

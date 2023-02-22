@@ -12,10 +12,10 @@ function handleData1({ nome, preco }: Produto) {
   preco.toFixed();
 }
 
-handleData1({
-  nome: "Notebook",
-  preco: 500,
-});
+// handleData1({
+//   nome: "Notebook",
+//   preco: 500,
+// });
 
 // Exemplo 02
 
