@@ -33,7 +33,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     // Diretórios dos arquivos compilados
-    "outDir": "dist"
+    "outDir": "dist",
+    "isolatedModules": true
   }
   // // Compila o que estiver na pasta src
   // "include": ["src"],
